@@ -1,0 +1,176 @@
+/* -------- RESET -------- */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+/* -------- BODY -------- */
+body{
+    display:flex;
+    background:#ffffff;
+    color:#333;
+}
+
+/* -------- SIDEBAR -------- */
+.sidebar{
+    width:210px;
+    height:100vh;
+    background:#f3edff;
+    border-right:1px solid #d9ccff;
+    padding:30px 20px;
+    position:fixed;
+}
+
+.sidebar h2{
+    text-align:center;
+    color:#6b4eff;
+    margin-bottom:30px;
+    font-weight:700;
+}
+
+.sidebar a{
+    display:block;
+    text-decoration:none;
+    color:#333;
+    padding:12px;
+    margin-bottom:10px;
+    border-radius:8px;
+    transition:0.3s;
+    font-weight:600;
+}
+
+.sidebar a:hover{
+    background:#6b4eff;
+    color:white;
+}
+
+/* -------- MAIN -------- */
+.main{
+    margin-left:210px;
+    padding:50px 70px;
+    width:100%;
+}
+
+/* -------- HEADER -------- */
+header h1{
+    color:#6b4eff;
+    font-size:36px;
+    font-weight:800;
+}
+
+header p{
+    margin-top:8px;
+    color:#555;
+    font-weight:600;
+}
+
+/* -------- HERO SECTION -------- */
+.hero{
+    margin-top:30px;
+    width:100%;
+    min-height:340px;
+
+    background-image:
+        linear-gradient(
+            rgba(255,255,255,0.65),
+            rgba(255,255,255,0.65)
+        ),
+        url("images/block.jpg.jpeg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    padding:80px 90px;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.08);
+}
+
+.hero h2{
+    font-size:34px;
+    margin-bottom:20px;
+    color:#4b2fa0;
+    font-weight:800;   /* ✅ BOLD */
+}
+
+.hero p{
+    font-size:17px;
+    max-width:1050px;
+    line-height:1.8;
+    margin-bottom:18px;
+    color:#444;
+    font-weight:600;   /* ✅ BOLD */
+}
+
+/* -------- BUTTON -------- */
+.btn{
+    display:inline-block;
+    padding:14px 32px;
+    background:#6b4eff;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:700;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#593bd6;
+}
+
+/* -------- CONTENT SECTION -------- */
+.content{
+    margin-top:45px;
+    background:#f8f5ff;
+    padding:70px 90px;
+    border-radius:20px;
+}
+
+.content h2{
+    color:#4b2fa0;
+    margin-top:35px;
+    font-weight:800;   /* ✅ BOLD */
+}
+
+.content p{
+    margin-top:12px;
+    line-height:1.8;
+    font-size:16px;
+    font-weight:600;   /* ✅ BOLD */
+}
+
+.content li{
+    margin-top:12px;
+    line-height:1.8;
+    font-size:16px;
+    font-weight:600;   /* ✅ BOLD */
+}
+
+/* -------- INPUTS -------- */
+input,
+textarea{
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+    margin-bottom:20px;
+    border-radius:8px;
+    border:1px solid #cfc7ff;
+    font-size:14px;
+    font-weight:600;
+}
+
+textarea{
+    height:90px;
+    resize:none;
+}
+
+/* -------- FOOTER -------- */
+footer{
+    margin-top:60px;
+    text-align:center;
+    color:#777;
+    font-size:14px;
+    font-weight:600;
+}

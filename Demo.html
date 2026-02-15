@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Blockchain Wallet Lab</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+    <h2>Crypto Canvas</h2>
+    <a href="index.html">Home</a>
+    <a href="module.html">Learn</a>
+    <a href="Demo.html">Wallet Lab</a>
+    <a href="about.html">About</a>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="main">
+
+<header>
+<h1>Wallet Laboratory</h1>
+<p>Hands-on blockchain wallet experimentation</p>
+</header>
+
+<section class="content">
+
+<h2>Create Wallet</h2>
+<p>Generate a public & private key pair.</p>
+
+<button onclick="createWallet()" class="btn">Generate Wallet</button>
+
+<textarea id="privateKey" placeholder="Private Key"></textarea>
+<textarea id="address" placeholder="Public Address"></textarea>
+
+<h2>Sign Message</h2>
+<p>Sign a message using your private key.</p>
+
+<input id="message" placeholder="Enter message">
+<button onclick="signMessage()" class="btn">Sign Message</button>
+
+<textarea id="signature" placeholder="Signature"></textarea>
+
+<h2>Verify Signature</h2>
+<p>Verify the signed message.</p>
+
+<button onclick="verify()" class="btn">Verify</button>
+<p id="result"></p>
+
+</section>
+
+<footer>
+<p> 2026 Blockchain Learning Hub | Wallet Lab</p>
+</footer>
+
+</div>
+
+<script src="blockchain.js"></script>
+
+</body>
+</html>
